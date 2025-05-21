@@ -1,86 +1,94 @@
-# ExamenSASF
-Examen final de ingreso a pasantias de Sudamericana de Software SA - JAVA INTERMEDIO
+# 📚 ExamenSASF
 
+**Examen Final - Ingreso a Pasantías**  
+**Sudamericana de Software S.A. | JAVA INTERMEDIO**
 
-Instrucciones
-Sistema de Gestión de Biblioteca
-Descripción del Problema
-Desarrollar un sistema de consola en Java que permita gestionar libros y préstamos en una biblioteca. El sistema debe registrar libros, realizar préstamos, consultar disponibilidad y mostrar el historial de préstamos por lector. Se aplican principios de programación orientada a objetos, uso de colecciones y manejo de excepciones.
+---
 
-✅ Requerimientos del Sistema
-1. Libros y Préstamos
-Cada libro debe tener:
+## 🎯 Descripción del Proyecto
 
-Código único (ej. ISBN-001)
+Sistema de consola en **Java** para la **gestión de una biblioteca**, que permite:
 
-Título
+- Registrar libros 📖  
+- Realizar préstamos 🤝  
+- Consultar disponibilidad ✅  
+- Mostrar historial de préstamos por lector 🔍
 
-Autor
+> Se aplican principios de **programación orientada a objetos**, uso de **colecciones** y manejo de **excepciones**.
 
-Género (novela, ciencia, historia, etc.)
+---
 
-Estado (disponible / prestado)
+## ✅ Requerimientos del Sistema
 
-Cada préstamo debe incluir:
+### 📗 Libros
 
-Código único de préstamo
+Cada libro debe contener:
 
-Nombre del lector
+- Código único (ej. `ISBN-001`)
+- Título
+- Autor
+- Género (novela, ciencia, historia, etc.)
+- Estado (`Disponible` / `Prestado`)
 
-Código del libro
+### 📘 Préstamos
 
-Fecha de préstamo
+Cada préstamo debe contener:
 
-Fecha estimada de devolución
+- Código único de préstamo
+- Nombre del lector
+- Código del libro
+- Fecha de préstamo
+- Fecha estimada de devolución
 
-2. Registro de Libros y Préstamos
-Permitir registrar nuevos libros.
+---
 
-Permitir registrar un préstamo ingresando:
+## 🛠️ Funcionalidades
 
-Nombre del lector
+- Registrar nuevos **libros** y **préstamos**
+- Consultar **libros disponibles por género**
+- Listar **préstamos activos**
+- Consultar **préstamos por lector** y mostrar libros prestados
 
-Código del libro
+> Uso recomendado de `List`, `Map` o `Set` según el caso. Se puede aplicar **Streams** para filtros.
 
-Fechas de préstamo y devolución
+---
 
-Validar:
+## ⚠️ Validaciones
 
-Que el código del libro exista.
+- Código del libro debe **existir**
+- Libro debe estar **disponible**
+- Códigos de préstamo deben ser **únicos**
 
-Que el libro esté disponible.
+---
 
-Que los códigos de préstamo no se repitan.
+## 🚨 Manejo de Excepciones
 
-3. Funcionalidades del Sistema
-El sistema debe permitir:
+Se debe capturar y manejar errores como:
 
-Registrar libros y préstamos.
+- Código duplicado
+- Libro no disponible
+- Fechas mal formateadas (`LocalDate`)
+- Código de libro no encontrado
 
-Consultar libros disponibles por género.
+---
 
-Listar todos los préstamos activos.
+## 🔧 Requisitos Técnicos
 
-Consultar préstamos por lector y mostrar sus libros prestados.
+- Uso de **clases con atributos privados** y métodos `get/set` (encapsulamiento)
+- Buenas **prácticas de nombres** para clases, atributos y métodos
+- Implementar un **menú interactivo por consola** en la clase `Main`
+- Comentar el código explicando clases y métodos principales
 
-Usar List, Map o Set según el caso. Aplicar Streams opcionalmente para filtros.
+---
 
-4. Manejo de Excepciones
-Manejar errores con excepciones simples o personalizadas:
+## 🧠 Tips
 
-Código duplicado.
+- Piensa en modularidad: separa las clases por entidad (`Libro`, `Prestamo`, etc.)
+- Usa excepciones personalizadas para una mejor organización de errores
+- Usa `LocalDate` para trabajar con fechas de forma segura
+- Aplica principios SOLID donde creas conveniente 😉
 
-Libro no disponible.
+---
 
-Fechas mal formateadas (si se usa LocalDate).
-
-Código de libro no encontrado.
-
-🔧 Requisitos Técnicos
-Usar clases con atributos privados y métodos get/set (encapsulamiento).
-
-Seguir buenas prácticas de nombres de clases, atributos y métodos.
-
-Implementar un menú por consola en la clase Main.
-
-Comentar el código explicando clases y métodos principales.
+¡Mucho éxito! 🚀  
+_Sudamericana de Software S.A._
